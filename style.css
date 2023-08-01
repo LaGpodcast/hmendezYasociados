@@ -1,0 +1,290 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del encabezado */
+  
+  .header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    background-image: url(images/medicoabogado.webp);
+    background-size: cover;
+    background-position: center;
+   }
+
+   .header h1{
+    color: white;
+   }
+ 
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul :hover{
+    background-color: #45a049;
+    color: white;
+    padding: 0.01px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+   }
+  
+  /* Estilos del logo */
+  
+  header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  
+  /* Estilos de la sección de imagen y texto */
+  
+  section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de la sección de servicios */
+  
+  section#Servicios {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+  }
+  
+  section#Servicios h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section#Servicios div {
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  section#Servicios img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  section#Servicios h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  section#Servicios p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  section#Servicios button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Estilos de la sección de Nosotros */
+  
+  section#nosotros {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50px;
+  }
+  
+  section#nosotros h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de la sección de Cursos e Inscripción */
+  
+  section#cursos {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  section#cursos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section#cursos ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  section#cursos li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Estilos adicionales para resaltar elementos */
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  section#Servicios div:hover,
+  section#cursos li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  section div p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  section div button {
+    background-color: #0d47a1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Sección de Nosotros */
+  section#nosotros {
+    background-color: #45a049;
+    padding: 40px;
+    text-align: center;
+    
+  }
+  
+  /* Sección de Cursos e Inscripción */
+  section#cursos {
+    padding: 40px;
+  }
+  
+  section#cursos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  section#cursos li {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  section#cursos form {
+    margin-top: 20px;
+  }
+  
+  section#cursos label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  section#cursos input[type="text"],
+  section#cursos input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  section#cursos button[type="submit"] {
+    background-color: #0d47a1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para enlaces */
+  a {
+    color: #0d47a1;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p#solicitud{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25;
+  }
+
+  form label{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+  }

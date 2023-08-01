@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hmendez-Jose & Asociados</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="header">
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#inscripcion">Inscripción</a></li>
+      </ul>
+    </nav>
+
+    <!-- Encabezado con logo -->
+    <header>
+      <img src="images/logomendez.jpg" alt="Logo de la empresa">
+      <h1>Hmendez-Jose & Asociados</h1>
+    </header>
+
+    <!-- Sección de imagen y texto -->
+    <section>
+      <!--<img src="ruta-de-la-imagen.jpg" alt="Imagen descriptiva">
+      <p>
+        Contadores. Abogados. Consultores Fiscales y legales
+      </p>-->
+    </section>
+
+    <!-- Sección de productos en venta -->
+    <section id="Servicios">
+      <h2>Servicios Disponibles</h2>
+      <div>
+        <img src="images/servicios/maretia penal.jpg" alt="Producto 1">
+        <h3>Materia Penal</h3>
+        <p>Descripción del servicio 1.</p>
+      </div>
+      <div>
+        <img src="images/servicios/materia administrativa.jpg" alt="Producto 2">
+        <h3>Materia administrativa</h3>
+        <p>Descripción del servicio 2.</p>
+      </div>
+      <div>
+        <img src="images/servicios/materia civil.jpg" alt="Producto 3">
+        <h3>Materia civil</h3>
+        <p>Descripción del servicio 3.</p>
+      </div>
+            <div>
+        <img src="images/servicios/materia laboral.jpg" alt="Producto 3">
+        <h3>Materia Laboral</h3>
+        <p>Descripción del servicio 4.</p>
+      </div>
+      <br>
+            <div>
+        <img src="images/servicios/materia tributaria.jpg" alt="Producto 3">
+        <h3>Materia Tributaria</h3>
+        <p>Descripción del servicio 5.</p>
+      </div>
+            <div>
+        <img src="images/servicios/patrimonio.jpg" alt="Producto 3">
+        <h3>Proteccion de tu Patrimonio</h3>
+        <p>Descripción del servicio 6.</p>
+      </div>
+            <div>
+        <img src="images/servicios/honorarios.jpg" alt="Producto 3">
+        <h3>Proteccion de Honorarios</h3>
+        <p>Descripción del servicio 7.</p>
+      </div>
+            <div>
+        <img src="images/servicios/Materias Legales.jpg" alt="Producto 3">
+        <h3>asistencia en las materias legales </h3>
+        <p>Descripción del servicio 8.</p>
+      </div>
+      <br>
+      <button id="adquirir-servicio-1">Adquirir uno de los Servicios</button>
+  <!-- Puedes agregar más productos siguiendo la misma estructura -->
+  </section>
+
+  <!-- Sección de Nosotros -->
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>
+        Contamos con una de las coberturas jurídicas más completas que hay en el mercado cubriendo 
+        las cuatro materias del derecho<br> en las cuales puede verse involucrado usted como médico al 
+        ejercer su profesión las cuales son materia penal; materia administrativa;<br> materia civil y 
+        como plus la materia tributaria e impositiva y materia laboral siendo una de las pocas 
+        empresas en incluirla dentro de su cobertura,<br> al diseñar nuestra propuesta jurídica integral 
+        usted podrá evitar desembolsar fuertes cantidades de dinero ya que mediante nuestros servicios<br> 
+        y planes protegemos su patrimonio, cubriendo honorarios de abogados, pláticas en temas médico 
+        legales asesorías y asistencia en las materias<br> legales que ofertamos, entre muchos beneficios más.<br>
+        <br>
+        Nuestro objetivo es que usted se encuentre siempre representado ante cualquier demanda denuncia 
+        o queja por parte de sus pacientes<br> familiares o algún representante de ellos que podría 
+        ocasionarle erogar fuertes cantidades de dinero; ser inhabilitado o incluso<br> perder su libertad 
+        y para ello contamos con el mejor equipo de abogados especialistas en el ramo médico legal, 
+        así como una atención<br> las 24 horas del día los 365 días del año garantizando una defensa clara 
+        y objetiva teniendo como principal prioridad sus intereses.
+        
+    </p>
+  </section>
+    <form  id="myForm">
+      <label for="nombre">Buscar en Google:</label>
+      <input type="text" id="google" name="nombre" required>
+      <button  type="button" onclick="buscarEnGoogle()">Buscar</button>
+    </form>
+  </section>
+  <script>
+  function buscarEnGoogle() {
+    const searchTerm = document.getElementById("google").value;
+    if (searchTerm.trim() !== "") {
+      const encodedSearchTerm = encodeURIComponent(searchTerm);
+      window.location.href = `https://www.google.com/search?q=${encodedSearchTerm}`;
+    }
+  }
+
+  // Obtenemos los botones por su ID
+  const boton1 = document.getElementById("adquirir-servicio-1");
+  // Otros botones (si los hubiera)
+
+  // Agregamos el evento de clic a cada botón
+  boton1.addEventListener("click", function() {
+    // Mostramos un mensaje en pantalla
+    alert("Envíanos un correo a hmendezasociados@gmail.com informándonos el curso.");
+  });
+
+  </script>
+</body>
+
+</html>
